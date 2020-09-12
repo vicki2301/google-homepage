@@ -1,0 +1,1 @@
+Following The Odin Project. Mini project to set layout of Google homepage
