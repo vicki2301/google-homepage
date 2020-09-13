@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+    <style>
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .nav-right {
+            float: right;
+           
+        }
+
+        .nav-left {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            opacity: 0.75;
+            text-decoration: none;
+            padding: 10px 10px;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            position: relative;
+            height: 10px;
+        }
+
+        img {
+           position: absolute;
+           left: 40%;
+           top: 25%;
+        }
+
+        form {
+            position: absolute;
+            left: 32%;
+            top: 40%;
+        }
+
+        .submit {
+            border-radius: 4px;
+            border: none;
+            width: 150px;
+            height: 36px;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            opacity: 0.75;
+            display: inline-block;
+        }
+
+        #search {
+            border-radius: 25px;
+            border: 1px solid lightgray;
+            width: 500px;
+            height: 35px;
+            color: lightgray;
+        }
+
+        .submit:hover {
+            border: 1px solid lightgray;
+            opacity: 1;
+        }
+
+    </style>
+  </head>
+  <body>
+        <nav>
+            <ul>
+                <li class="nav-left"><a href="gmail.com">About</a></li>
+                <li class="nav-left"><a href="gmail.com">Store</a></li>
+            </ul>
+            <ul>
+                <li class="nav-right"><a href="https://www.google.co.uk/imghp?hl=en&tab=ri&ogbl">Images</a></li>
+                <li class="nav-right"><a href="gmail.com">Gmail</a></li>
+            </ul>
+        </nav>
+        <div class="container"></div>
+            <img src="googlelogo.png" alt="Google Logo">
+            <form action="">
+                <input type="text" name="search" id="search">
+                <input type="submit" name="submit" value="Google Search" class="submit">
+                <input type="submit" name="submit" value="I'm Feeling Lucky" class="submit">
+            </form>
+        </div>
+        <footer>
+            <p><a href="">Customize</a></p>
+        </footer>
+    
+  </body>
+</html>
