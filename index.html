@@ -5,6 +5,12 @@
     <title>Google</title>
     <style>
 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            background: white;
+        }
+
         ul {
             list-style-type: none;
             padding: 0;
@@ -21,11 +27,11 @@
 
         li a {
             display: block;
-            color: black;
             opacity: 0.75;
             text-decoration: none;
             padding: 10px 10px;
             font-size: 13px;
+            color: black;
             font-family: Arial, Helvetica, sans-serif;
         }
 
@@ -59,20 +65,77 @@
             font-family: Arial, Helvetica, sans-serif;
             color: black;
             opacity: 0.75;
+            margin: 11px 0 11px 5px;
         }
 
         #search {
             border-radius: 25px;
             border: 1px solid lightgray;
-            width: 500px;
-            height: 35px;
+            width: 555px;
+            height: 38px;
             color: lightgray;
+        }
+
+        #search:hover {
+            box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+
         }
 
         .submit:hover {
             border: 1px solid lightgray;
             opacity: 1;
         }
+
+        .center-btns {
+            display: block;
+            margin: 10px 100px;
+        }
+
+        footer {
+            background-color: rgb(242,242,242);
+            border-top: 1px solid rgb(228,228,228);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+
+        hr {
+            border: 0.5px solid rgb(228,228,228);
+        }
+
+        footer p a{
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: 14px;
+            opacity: 0.75;
+            text-decoration: none;
+            padding: 0 15px 0 15px;
+        }
+
+        footer p a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-top {
+            font-size: 15px;
+            padding: 0 15px 0 15px;
+            margin: 10px 0 10px 5px;
+            opacity: 0.6;
+        }
+
+        .footer-left {
+            float: left;
+            margin: 5px 0 15px 5px;
+            
+        }
+
+        .footer-right {
+            float: right;
+            margin: 5px 0 15px 5px;
+        }
+
+
 
     </style>
   </head>
@@ -91,12 +154,21 @@
             <img src="googlelogo.png" alt="Google Logo">
             <form action="">
                 <input type="text" name="search" id="search">
-                <input type="submit" name="submit" value="Google Search" class="submit">
-                <input type="submit" name="submit" value="I'm Feeling Lucky" class="submit">
+                <div class="center-btns">
+                    <input type="submit" name="submit" value="Google Search" class="submit">
+                    <input type="submit" name="submit" value="I'm Feeling Lucky" class="submit">
+                </div>
             </form>
         </div>
         <footer>
-            <p><a href="">Customize</a></p>
+            <p class="footer-top">United Kingdom</p>
+            <hr>
+            <p class="footer-left"><a href="">Advertising</a></p>
+            <p class="footer-left"><a href="">Business</a></p>
+            <p class="footer-left"><a href="">How Search works</a></p>
+            <p class="footer-right"><a href="">Settings</a></p>
+            <p class="footer-right"><a href="">Terms</a></p>
+            <p class="footer-right"><a href="">Privacy</a></p>
         </footer>
     
   </body>
